@@ -1,0 +1,101 @@
+*{
+  font-size: 21px;
+}
+/* 顶部图片 */
+.top-bg{
+  height: 300px;
+  background: #f38181;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.images{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.images img {
+  border-radius: 15px;
+  margin: 0 30px;
+}
+
+/* 动画 */
+img:hover {
+  transform: rotate(15deg);
+  transition: transform 0.3ms ease;
+}
+/* 信息部分 */
+.order{
+  display: flex;
+  justify-content: center;
+}
+
+
+.orderinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+ 
+}
+
+#info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 640px;
+  margin: 30px;
+}
+
+#title {
+  width: 160px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 20px;
+
+}
+
+.contain{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10px;
+  width: 480px;
+}
+
+.item {
+  padding: 4px 8px;
+}
+
+.item-but {
+  display: flex;
+  justify-content: center;
+
+}
+
+button {
+  padding: 8px;
+  margin-right: 16px;
+  margin-top: 30px;
+  width: 90px;
+  height: 50px;
+  border-radius: 8px;
+  border: 0cap;
+}
+
+.submit {
+  background: #1677ff;
+  color:#fff;
+}
+
+.to-top {
+  position: fixed;
+  bottom: 18px;
+  right: 18px;
+  width: 36px;
+  padding: 4px;
+  border: 2px solid #595959;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #595959;
+  cursor: pointer;
+}

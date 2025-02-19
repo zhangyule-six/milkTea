@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>喜东茶</title>
+  <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+  <!-- 头部图片 -->
+  <div class="top">
+    <div class="top-bg">
+      <div class="images">
+      <img src="/images/奶茶1.jpg" >
+      <img src="/images/奶茶2.jpg" >
+      <img src="/images/奶茶3.jpg" >
+      <img src="/images/奶茶4.jpg" >
+      </div>
+    </div>
+  </div>
+
+  <!-- 订单信息部分 -->
+   <div class="order">
+      <div class="order-wrapper">
+          <form class="orderinfo">
+            <!-- 奶茶口味 -->
+            <div class="flavor" id="info">
+                <label for="flavor" id="title">奶茶口味:</label>
+                <div class="contain">
+                  <div class="item">
+                    <input type="radio" name = "flavor" id="蜜桃四季春" checked>
+                    <label for="蜜桃四季春">蜜桃四季春</label>
+                  </div>
+                  <div class="item">
+                    <input type="radio" name = "flavor" id="三倍厚抹">
+                    <label for="三倍厚抹">三倍厚抹</label>
+                  </div>
+                  <div class="item">
+                    <input type="radio" name = "flavor" id="珍珠奶茶">
+                    <label for="珍珠奶茶">珍珠奶茶</label>
+                  </div>
+                </div>
+            </div>
+
+            <!-- 几杯 -->
+            <div class="count" id="info">
+              <label for="count" id="title">数量:</label>
+              <div class="contain">
+                <div class="item"> 
+                  <input type="number" name="count" min="1" step="1" required>
+                </div>
+              </div>
+            </div>
+
+            <!-- 杯型 -->
+             <div class="size" id="info">
+                <label for="size" id="title">杯型:</label>
+                <div class="contain">
+                  <div class="item">
+                    <input type="radio" name="size" id="extra-large" checked>
+                    <label for="extra-large">超大杯</label>
+                  </div>
+                  <div class="item">
+                    <input type="radio" name="size" id="large">
+                    <label for="large">大杯</label>
+                  </div>
+                  <div class="item">
+                    <input type="radio" name="size" id="medium">
+                    <label for="medium">中杯</label>
+                  </div>
+                </div>
+             </div>
+
+             <!-- 甜度 -->
+              <div class="sweetness" id="info">
+                <label for="sweetness" id="title">甜度:</label>
+                <div class="contain">
+                  <select name="sweetness" class="item">
+                    <div class="item">
+                      <option value="suger-free">无糖</option>
+                    </div>
+                    <div class="item">
+                      <option value="low-suger">三分糖</option>
+                    </div>
+                    <div class="item">
+                      <option value="half-suger">五分糖</option>
+                    </div>
+                    <div class="item">
+                      <option value="normal-suger" selected>全糖</option>
+                    </div>
+                  </select>
+                </div>
+              </div>
+
+              <!-- 免费小料 -->
+              <div class="free-ingredient" id="info">
+                <label for="free-ingredient" id="title">免费小料:</label>
+                <div class="contain">
+                  <div class="item">
+                    <input type="checkbox" name="free-ingredient" id="boba">波霸
+                  </div>
+                  <div class="item">
+                    <input type="checkbox" name="free-ingredient" id="yeguo">椰果
+                  </div>
+                  <div class="item">
+                    <input type="checkbox" name="free-ingredient" id="chadong">茶冻
+                  </div>
+                  <div class="item">
+                    <input type="checkbox" name="free-ingredient" id="ximilu">西米露
+                  </div>
+                  <div class="item">
+                    <input type="checkbox" name="free-ingredient" id="hongdou">红豆
+                  </div>
+                  <div class="item">
+                    <input type="checkbox" name="free-ingredient" id="xiancao">仙草
+                  </div>
+                </div>
+              </div>
+
+              <!-- 加价小料 -->
+               <div class="charge-ingredient" id="info">
+                  <label for="charge-ingredient" id="title">加价小料:</label>
+                  <div class="contain">
+                    <div class="item">
+                      <input type="checkbox" name="charge-ingredient" id="icecream">
+                      <label for="icecream">冰淇淋（4￥）</label>
+                    </div>
+                    <div class="item">
+                      <input type="checkbox" name="charge-ingredient" id="pudding">
+                      <label for="pudding">布丁（3￥）</label>
+                    </div>
+                    <div class="item">
+                      <input type="checkbox" name="charge-ingredient" id="naishuang">
+                      <label for="naishuang">奶霜（2￥）</label>
+                    </div>
+                  </div>
+               </div>
+
+               <!-- 是否加冰 -->
+                <div class="ice" id="info">
+                  <label for="ice" id="title">是否加冰:</label>
+                  <div class="contain">
+                    <div class="item">
+                      <input type="radio" name="ice" id="yes" checked>
+                      <label for="yes">是</label>
+                    </div>
+                    <div class="item">
+                      <input type="radio" name="ice" id="no">
+                      <label for="no">否</label>
+                    </div>
+                  </div>  
+                </div>
+
+                 <!-- 是否去茶底 -->
+                 <div class="tea" id="info">
+                    <label for="tea" id="title">是否去茶底:</label>
+                    <div class="contain"> 
+                      <div class="item">
+                        <input type="radio" name="tea" id="yes" checked>
+                        <label for="yes">是</label>
+                      </div>
+                      <div class="item">
+                        <input type="radio" name="tea" id="no">
+                        <label for="no">否</label>
+                      </div>
+                    </div>
+                </div>
+
+                <!-- 地址 -->
+                 <div class="address" id="info">
+                  <label for="address" id="title">你的地址:</label>
+                    <div class="contain">
+                      <textarea name="address" id="address" placeholder="请输入您的地址" required></textarea>
+                    </div>
+                 </div>
+
+                 <!-- 手机号 -->
+                  <div class="phone" id="info">
+                    <label for="phone" id="title">你的手机号:</label> 
+                    <div class="contain">
+                      <input type="tel" name="phone" required>
+                    </div>
+                  </div>
+
+                  <!-- 送达时间 -->
+                   <div class="time" id="info">
+                      <label for="time" id="title">期待送达时间:</label>
+                      <div class="contain">
+                        <input type="time" name="time" id="time"" required>
+                      </div>
+                   </div>
+
+                   <!-- 备注 -->
+                   <div class="remark" id="info">
+                    <label for="rm" id="title">备注:</label>
+                      <div class="contain">
+                        <textarea name="remark" id="remark"></textarea>
+                      </div>
+                   </div>
+
+                   <!-- 支付方式 -->
+                    <div class="pay" id="info">
+                      <label for="pay" id="title">支付方式:</label>
+                      <div class="contain">
+                        <div class="item">
+                          <input type="radio" name="pay" id="wechat" checked>
+                          <label for="wechat">微信支付</label>
+                        </div>
+                        <div class="item">
+                          <input type="radio" name="pay" id="alipay">
+                          <label for="alipay">支付宝</label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- 提交 -->
+                     <div class="but" >
+                          <div class="item-but">
+                              <button type="submit" class="submit" name="submit" value="提交" onclick="sub()">提交</button>
+                              <button type="reset" class="reset" name="reset" value="重置">重置</button>
+                          </div>
+                     </div>
+          </form>
+      </div>
+   </div>
+
+   <!-- 回到顶部按钮 -->
+      <div class="to-top">返回顶部</div>
+    <!-- js代码 -->
+      <script src="/index.js"></script>
+</html>

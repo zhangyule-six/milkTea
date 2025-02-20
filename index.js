@@ -1,23 +1,23 @@
 //提交
-const submit = document.getElementsByClassName("submit")
-const form = document.getElementsByTagName("form")
+const submit = document.getElementsByClassName("submit")[0];
+const form = document.getElementsByTagName("form")[0]; 
 
-submit.addEventListener("submit",function(e){
+  function submitBtn(e){
   //阻止默认提交表单
-  e.preventDefaul();
-  const formData = new FormData(form)
-  const info = {}
+  e.preventDefault();
+  const formData = new FormData(form);
+  const info = {};
   for(var p of formData.entries()){
-    const pname = p[0]
-    const pvalue = p[1]
+    const pname = p[0];
+    const pvalue = p[1];
   
     if(!info[pname]){
       info[pname] = pvalue;
     }else{
-      var str = info[pname].value.split("")
-      str = str.push(pvalue)
-      info[pname] = str.join()
-      
+      // var str = info[pname].value.split("");
+      // str = str.push(pvalue);
+      // info[pname] = str.join();
+      [pvalue].concat(info[pname])
     }
   }
   const text = `
@@ -38,9 +38,11 @@ submit.addEventListener("submit",function(e){
   支付方式：${info.pay}
 `;
 console.log(info)
-alert(text)
-});
+alert(text);
+};
 
+
+form.addEventListener("submit",submitBtn);
 
 //返回顶部
 const tp = document.querySelector(".to-top");
